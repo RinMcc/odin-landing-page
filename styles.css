@@ -96,7 +96,6 @@ main {
 .content {
     display: flex;
     align-items: center;
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -174,9 +173,12 @@ main {
     gap: 16px;
 }
 
+.call-to-action section {
+    display: flex;
+}
+
 .c2a-text {
     flex-grow: 3;
-    display: flex;
     flex-direction: column;
     flex-basis: 160px;
     text-align: start;
@@ -201,7 +203,6 @@ main {
 }
 
 .c2a-button {
-    display: flex;
     flex-grow: 1;
     flex-basis: 80px;
     justify-content: center;
