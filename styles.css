@@ -1,10 +1,14 @@
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto', arial;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-header {
+.header {
     display: flex;
+    flex-grow: 1;
     height: 3vh;
 }
 
@@ -72,17 +76,7 @@ main {
 }
 
 .text-box button {
-    display: block;
-    text-align: center;
-    width: 110px;
     border: none;
-    background: #3882f6;
-    padding: 10px;
-    border-radius: 8px;
-    color: #fff;
-    font-family: 'Roboto', arial;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .image-box {
@@ -103,7 +97,7 @@ main {
     display: flex;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -160,8 +154,85 @@ main {
     text-align: right;
 }
 
-
-footer {
+.fourth-segment {
     display: flex;
-    height: 3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.call-to-action {
+    background-color: #3882F6;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    max-width: 70%;
+    width: 60%;
+    gap: 16px;
+}
+
+.c2a-text {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 160px;
+    text-align: start;
+    justify-content: center;
+    align-content: center;
+    padding: 8px;
+}
+
+.c2a-text h5 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #F9FAF8;
+    margin-bottom: 1%;
+}
+
+.c2a-text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F9FAF8;
+    opacity: 0.7;
+    margin-top: 1%;
+}
+
+.c2a-button {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 80px;
+    justify-content: center;
+    align-content: center;
+}
+
+.c2a-button button {
+    align-self: center;
+    justify-self: center;
+}
+
+button {
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: none;
+    background: #3882f6;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.footer {
+    background-color: #1F2937;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    width: 100%;
+    text-align: center;
 }
